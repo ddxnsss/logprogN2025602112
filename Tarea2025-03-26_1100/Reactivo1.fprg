@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reactivo1"/>
+        <attribute name="authors" value="ADMIN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-25 08:16:23 p. m."/>
+        <attribute name="created" value="QURNSU47REVTS1RPUC0wUFJIN0VMOzIwMjUtMDMtMjU7MDg6MDc6MTMgcC4gbS47Mjg5Ng=="/>
+        <attribute name="edited" value="QURNSU47REVTS1RPUC0wUFJIN0VMOzIwMjUtMDMtMjU7MDg6MTY6MjMgcC4gbS47MTszMDA1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Dona, pieza, total, desc, totaldesc" type="Integer" array="False" size=""/>
+            <assign variable="Dona" expression="10"/>
+            <output expression="&quot;&#191;Cuantas donas ha comprado?&quot;" newline="True"/>
+            <input variable="pieza"/>
+            <assign variable="total" expression="pieza*10"/>
+            <if expression="pieza&gt;=30">
+                <then>
+                    <if expression="pieza&gt;=50">
+                        <then>
+                            <assign variable="desc" expression="2*pieza"/>
+                        </then>
+                        <else>
+                            <assign variable="desc" expression="1*pieza"/>
+                        </else>
+                    </if>
+                </then>
+                <else/>
+            </if>
+            <assign variable="totaldesc" expression="total-desc"/>
+            <output expression="&quot;El total es: &quot;&amp;totaldesc&amp;&quot;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
