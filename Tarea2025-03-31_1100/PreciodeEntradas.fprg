@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PreciodeEntradas"/>
+        <attribute name="authors" value="ADMIN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-31 09:47:13 p. m."/>
+        <attribute name="created" value="QURNSU47REVTS1RPUC0wUFJIN0VMOzIwMjUtMDMtMzE7MDk6MzA6MDIgcC4gbS47Mjg4OA=="/>
+        <attribute name="edited" value="QURNSU47REVTS1RPUC0wUFJIN0VMOzIwMjUtMDMtMzE7MDk6NDc6MTMgcC4gbS47MTszMDA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <declare name="precio" type="Integer" array="False" size=""/>
+            <output expression="&quot;cual es tu edad&quot;" newline="True"/>
+            <input variable="edad"/>
+            <if expression="edad &lt; 4">
+                <then>
+                    <output expression="&quot;Entra gratis&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edad &lt;=18">
+                        <then>
+                            <output expression="&quot;Precio $200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Precio $500&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
