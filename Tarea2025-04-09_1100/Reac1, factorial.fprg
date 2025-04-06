@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reac1, factorial"/>
+        <attribute name="authors" value="ADMIN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-06 04:08:30 p. m."/>
+        <attribute name="created" value="QURNSU47REVTS1RPUC0wUFJIN0VMOzIwMjUtMDQtMDY7MDI6MzU6MjggcC4gbS47Mjg5Nw=="/>
+        <attribute name="edited" value="QURNSU47REVTS1RPUC0wUFJIN0VMOzIwMjUtMDQtMDY7MDQ6MDg6MzAgcC4gbS47MTszMDAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="f" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingrese un numero&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="f" expression="1"/>
+            <if expression="n &gt;= 0">
+                <then>
+                    <while expression="n &gt; 1">
+                        <assign variable="f" expression="f * n"/>
+                        <assign variable="n" expression="n - 1"/>
+                    </while>
+                    <output expression="&quot;el factorial es igual a &quot; &amp; f" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;numero invalido&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
